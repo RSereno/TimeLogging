@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Insert Hours</title>
+</head>
+<body>
+    <div>
+        <form action="/Hours/AddHours" method="post">
+            Ticket (IM or EV): <input type="text" id="TxtTicket" name="Ticket" value="" /><br />
+            Small Description: <input type="text" id="TxtSDesc" name="SmallDesc" value="" /><br />
+            Time Spent: <input type="text" id="TxtTime" name="TimeSpent" value="" /><br /> <!-- To be converted in hh:mm -->
+            Date (Today by default): <input type="text" id="TxtDate" name="Date" value="" /><br /> <!-- Calendar selection -->
+            <input type="submit" name="BtnSave" value="Add Time" />
+            <input type="button" name="BtnReset" value="Reset" />
+        </form>
+    </div>
+</body>
+</html>
